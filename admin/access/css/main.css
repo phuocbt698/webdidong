@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+/*
+    css header
+*/
+.header {
+    width: 100%;
+    height: 100px;
+    background: #3c8dbc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .left {
+    height: 100%;
+    margin-left: 70px;
+    margin-top: 10px;   
+}
+
+.header .left img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.header .right {
+    height: 100%;
+    display: flex;
+    margin-right: 75px;
+    align-items: flex-end;
+}
+
+.header .right .info-user {
+    margin-right: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.name-user {
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.name-user li {
+    list-style: none;
+}
+
+.name-user li ul a {
+    text-decoration: none;
+}
+
+.name-user li:first-child {
+    cursor: pointer;
+}
+
+.name-user > li:hover .menu-user {
+    display: block;
+}
+
+
+.menu-user {
+    display: none;
+    height: 260px;
+    position: absolute;
+    margin-top: 10px;
+    width: 250px;
+    justify-content: space-between;
+    margin-left: -90px;
+    background-color: #3c8dbc;
+    border-radius: 5px;
+}
+.menu-user::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: -25px;
+    height: 15%;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+}
+
+.header-menu img {
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.header-menu span {
+    margin-top: 5px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer-menu a {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 70px;
+    height: 25px;
+    background: rgba(31, 30, 30, 0.295);
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    color: #fff;
+}
+
+
+
+.header .right .img-user {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.header .right .img-user img {
+    width: 50px;
+    height: 50px;
+    margin-bottom:0 ;
+    border-radius: 50%;
+}
+
+/*
+    CSS CONTENT
+*/
+
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-sidebar {
+    width: 20%;
+    height: auto;
+    background: #333;
+}
+
+.menu-sidebar h2 {
+    margin-top: 15px;
+    margin-left: 37px;
+    color: #fff;
+}
+
+.menu-admin {
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.menu-admin ul{
+    list-style: none;
+}
+
+.menu-admin li{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.menu-admin ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-admin a:hover li {
+    background-color: black;
+}
+
+.main-content {
+    width: 100%;
+    height: auto;
+}
+
+.header-main {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.header-main h2 {
+    margin-left: 30px;
+}
+
+.header-main button {
+    margin-right: 30px;
+    height: 35px;
+    width: 160px;
+    background-color: rgb(61, 233, 61);
+}
+
+.header-main button i {
+    margin-right: 10px;
+}
+
+.data-table {
+    width: 100%;
+}
+
+.data-table table {
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+.data-table table thead {
+    background: #2ab548;
+}
+
+.data-table table a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.data-table table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.data-table table tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.paging {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.paging a {
+    margin-right: 10px;
+}
+
+/*
+    CSS FOOTER
+*/
+
+.footer {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .name-project {
+    margin-left: 10px;
+}
+
+.footer .infor-author {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.footer .author-1 {
+    margin-right: 250px;
+}
